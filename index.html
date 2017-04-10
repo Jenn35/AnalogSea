@@ -3,19 +3,25 @@
 <head>
 	<title>Analog Sea signup form</title>
 	<meta name='description' content='The signup form for Analog Sea'>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-	<div class='logo-container'>
-		<img src="AnalogSea-logo.png" class='logo'>
-	</div>
+	
+	<img src="AnalogSea-logo.png" class='logo'/>
+	
 	<form action='/signup/' method='post'>
 		<h1>Sign up</h1>
 		<fieldset name='signup-info'>
-			<legend>Sign up</legend>
-			<label for='email'>Email</label>
-			<input type='text' placeholder= "foo@bar.com" name="Email"/>
+			
+			<label for='email' required>Email</label>
+			<input type='email' placeholder= "foo@bar.com" name="Email"/>
+
+			<label for='password' required>Password</label>
+			<input type="password" name="Password" placeholder='1234passwOrd'>
 		</fieldset>
+		<button type='signup'>Sign up</button>
+			<a href="/forgot-password/new" class='forgot-password'>Forgot password?</a>
 	</form>
+		<span>Already have an account? <a href="/login">Log In</a></span>
 </body>
 </html>
