@@ -11,17 +11,19 @@
 	
 	<form action='/signup/' method='post'>
 		<h1>Sign up</h1>
-		<fieldset name='signup-info'>
 			
-			<label for='email' required>Email</label>
+			<label class='label' for='email' required>Email</label>
 			<input type='email' placeholder= "foo@bar.com" name="Email"/>
 
-			<label for='password' required>Password</label>
+			<label class='label' for='password' required>Password</label>
 			<input type="password" name="Password" placeholder='1234passwOrd'>
-		</fieldset>
-		<button type='signup'>Sign up</button>
-			<a href="/forgot-password/new" class='forgot-password'>Forgot password?</a>
+
+		
+		<button type='submit'>Sign up</button>
+			<span><a href="/forgot-password/new" class='forgot-password'>Forgot password?</a></span>
 	</form>
-		<span>Already have an account? <a href="/login">Log In</a></span>
+		<div class='log-in'>
+			<span>Already have an account? <a href="/login">Log In</a></span>
+		</div>
 </body>
 </html>
